@@ -1,5 +1,5 @@
 # OpenLibrary
-FHE Java 2 Project
+FHE Java 2 Project by Iliass Bensalah
 
 OpenLibrary is a basic library management software, that allows users to search the catalogue, and the staff to add books to the library, and do borrowing/returning operations for customers.
 OpenLibrary is written in java, and requires the following softwares/plug-ins to function optimally:
