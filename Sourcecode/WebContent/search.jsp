@@ -14,9 +14,11 @@
 <%@ include file="/views/nav_bar.jsp" %>
 <%@ include file="/views/search_bar.jsp" %>
 <%
-/*
-Search Function
-*/
+/**
+*Search Function
+*This function takes the input keywords, split them into single words, 
+*and adds a % symbol before and after each word, so that the DB can use the LIKE command
+**/
 	if (request.getParameter("keyword")!= null && request.getParameter("search_by") != null)
 {
 		String keyword = request.getParameter("keyword");
