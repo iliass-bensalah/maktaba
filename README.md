@@ -27,7 +27,31 @@ Please note that the word abstract here has nothing to do with an abstract class
     - Borrow a book (for a USER)
     - Return a book (for a USER)
     - Add new books and bookitems to the library
-    
+  
+ # Structure:
+ Java Ressources:
+   - Package: account, Classes: User.
+   - Package: bookstore, Classes: Book, BookItem
+   - Package: helper, Classes: Database, BookDAO, UserDAO
+   
+ Web Content:
+  - borrow.jsp
+  - index.jsp
+  - items.jsp
+  - login.jsp
+  - logout.jsp
+  - manage.jsp
+  - record.jsp
+  - return.jsp
+  - search.jsp
+  - signup.jsp
+  - views/book_form.jsp
+  - views/borrow_form.jsp
+  - views/nav_bar.jsp
+  - views/return_form.jsp
+  - views/search_bar.jsp
+ 
+ 
  # Classes:
  We wanted to keep things as simple as possible in this version 1.0, that's why we kept the classes and their characteristics to the minimum.
  For example, for a USER to register, they only need an Email address. Of course, a name, an address and maybe banking details are important in a real life scenario, but they can be easily added in a later version.
