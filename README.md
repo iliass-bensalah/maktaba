@@ -7,6 +7,7 @@ OpenLibrary is written in java, and requires the following softwares/plug-ins to
  - Java jre v1.8.0_181
  - MariaDB v10.1.31
  - Mysql-connector v8.0.15
+ - Gson v2.8.5
  - Developed on Eclipse IDE v2018-12 (4.10.0)
  
 In the Code as well as in the Documentation, there is a distinction between Book and BookItem, with the first being an abstract kind, and the latter being the physical copy of the book.
