@@ -1,7 +1,7 @@
 # OpenLibrary
 FHE Java 2 Project
 
-OpenLibrary is a basic library management software, that allows users to search the catalog, and the staff to add books to the library, and do borrowing/returning operations for customers.
+OpenLibrary is a basic library management software, that allows users to search the catalogue, and the staff to add books to the library, and do borrowing/returning operations for customers.
 OpenLibrary is written in java, and requires the following softwares/plug-ins to function optimally:
  - Apache Tomcat Server v9.0
  - Java jre v1.8.0_181
@@ -18,12 +18,13 @@ Please note that the word abstract here has nothing to do with an abstract class
   
     - Register
     - Login
-    - Search the catalog
+    - Search the catalogue
     - View borrowed items
     
    **As an ADMIN:**
   
-    - Search
+    - Login
+    - Search the catalogue
     - Borrow a book (for a USER)
     - Return a book (for a USER)
     - Add new books and bookitems to the library
@@ -45,6 +46,7 @@ Please note that the word abstract here has nothing to do with an abstract class
   - return.jsp
   - search.jsp
   - signup.jsp
+  - api/search.jsp
   - views/book_form.jsp
   - views/borrow_form.jsp
   - views/nav_bar.jsp
@@ -110,4 +112,10 @@ FROM bookitems GROUP BY bookitems.book_id )
 as t ON `books`.id = t.book_id where books.title LIKE 'cat'
 ```
   
-  
+ # JSON
+We wanted to make the catalogue available for web and mobile apps, so we have an interface to get Json formatted responses.
+This takes place for GET requests to /api/search.jsp with the parameters keyword and search_by
+
+```
+/api/search.jsp?keyword=dog&search_by=title
+```
